@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/card"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:background="#11C4DF"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="200dp"
+            android:layout_height="225dp"
+            android:src="@drawable/prabhakar"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:layout_margin="15dp"
+            android:layout_toEndOf="@id/img"
+            android:layout_toRightOf="@id/img"
+            android:text="Prabhakar"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_margin="15dp"
+            android:layout_toEndOf="@id/img"
+            android:layout_toRightOf="@id/img"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="001"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/img"
+            android:layout_toRightOf="@id/img"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="21/05/1990"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dob"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/img"
+            android:layout_toRightOf="@id/img"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Hasanganj, Safiyabad,Munger"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
